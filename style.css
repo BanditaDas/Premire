@@ -1,0 +1,820 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: fit-content;
+    width: 100%;
+    background-color: #F8F8F8;
+    position: relative;
+    padding-top: 1px;
+}
+.nav{
+    height: 12vh;
+    width: 100%;    
+    margin-top: 30px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav h1{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'monument';
+    font-size: 45px;
+    letter-spacing: -4px;
+    position: relative;
+}
+.nav h1::after{
+    content: "©️";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    position: absolute;
+    top: 15%;
+    right: 17%;
+}
+.nav h1::before{
+    content: "model managment";
+    font-weight: 400;
+    font-size: 8px;
+    position: absolute;
+    bottom: 15%;
+    letter-spacing: 5px;
+    right: 17%;
+    color: #666;
+}
+.nav h2{
+    height: 100%;
+    width: 22%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid #000;
+    font-size: 24px;
+    font-weight: 500;
+}
+.nav h3 i{
+    display: none;
+}
+.nav h2:nth-last-child(2){
+    width: 10%;
+    border:none;
+}
+
+.center{
+    height: 100%;
+    width: 100%;
+    padding: 3vw;
+    position: relative;
+}
+.content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.overlay{
+    height: 45%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 3vw;
+    color: #fff;
+}
+.over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3.2vw;
+}
+.over1 h1{
+    font-size: 5vw;
+    font-weight: 600;
+    line-height: 4.5vw;
+}
+.over1 h2{
+    font-size: 1.5vw;
+    font-weight: 400;
+    padding: 2vw 2.2vw;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+.over2{
+    padding-top: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+}
+.over2 h4{
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+.over2 i{
+    font-size: 2.5vw;
+}
+.scroll{
+    height: 40vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.container{
+    height: 95%;
+    width: 90%;
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.scroll img{
+    height: 100%;
+    width: 18.3%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    margin: 1vw;
+}
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.alpha{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .9vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+.alpha h5{
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    text-decoration: underline;
+    letter-spacing: .4vw;
+    margin-right: 1.5vw;
+}
+.alpha h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    padding: .4vw .8vw;
+    border: 2px solid #00000000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.alpha h6:hover{
+    border: 2px solid #000;
+
+}
+.pg2{
+    height: 60%;
+    width: 100%;
+    padding: 4.5vw;
+    display: flex;
+    justify-content: center;
+}
+.p1{
+    height: 100%;
+    width: 50%;
+}
+.p1 img{
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 2vw;
+}
+.p1 h2{
+    text-transform: uppercase;
+    font-size: 2.5vw;
+    font-weight: 900;
+}
+.p2{
+    height: 100%;
+    width: 40%;
+}
+.p2 img{
+    height: 35vw;
+    width: 100%;
+    object-fit: cover;
+}
+.para{
+    margin-top: 1.5vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.para h3{
+    width: 50%;
+    font-size: 1.8vw;
+    margin-right: 1vw;
+}
+.para p{
+    width: 50%;
+    font-size: 1.2vw;
+}
+.p3{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 2vw;
+    gap: 5vw;
+}
+.circle-txt{
+    width: 40%;
+}
+.circle{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.circle #c{
+    height: 19vw;
+    width: 19vw;
+    position: absolute;
+    left: 15%;
+    animation-name: rotate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes rotate {
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 360deg;
+    }
+}
+.circle #a{
+    height: 5.5vw;
+    width: 5.5vw;
+    position: absolute;
+    left: 33%;
+}
+.txt{
+    height: 20%;
+    padding: 0vw 2vw;
+}
+.txt h3{
+    font-size: 2vw;
+    font-weight: 400;
+}
+.pic{
+    height: 95%;
+}
+.pic img{
+    height: 100%;
+    object-fit: cover;
+}
+.p3p1{
+    height: 40vw;
+    width: 100%;
+    padding: 5vw;
+}
+.p3p1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+.p4{
+    height: 50vw;
+    width: 100%;
+    position: relative;
+    padding: 5vw 4vw;
+}
+.p4>h1{
+    text-align: center;
+    font-family: 'monument';
+    font-size: 3vw;
+    margin-bottom: 5vh;
+}
+.elem{
+    height: 18vh;
+    width: 100%;
+    position: relative;
+    border-top: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+.elem img{
+    position: absolute;
+    height: 15vh;
+    width: 7.5vw;
+    object-fit: cover;
+    border-radius: 50%;
+    left: 10%;
+    opacity: 0;
+    transition: all ease 1s;
+}
+.elem h4{
+    font-size: 1.5vw;
+    font-weight: 400;
+    text-transform: uppercase;
+    width: 6%;
+}
+.elem .elem2{
+    width: 50%;
+}
+.elem2 h1{
+    font-size: 2.5vw;
+    font-weight: 500;
+}
+.elem2 h5{
+    font-size: .8vw;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 5px;
+}
+.elem:nth-last-child(1){
+    border-bottom: 2px solid #000;
+
+}
+.elem:hover img{
+    opacity: 1;
+    left: 40%;
+}
+
+.p5{
+    height: fit-content;
+    width: 100%;
+    padding: 4vw;
+}
+.p5p1{
+    height: 50vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5vw;
+    gap: 5vw;
+}
+.pho{
+    height: 100%;
+    width: 50%;
+}
+.pho img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.mp{
+    height: 100%;
+    width: 50%;
+}
+.mp h2{
+    font-size: 2.5vw;
+    text-transform: uppercase;
+    padding: 2vw 0;
+
+}
+.mp h4{
+    width: 70%;
+    font-size: 1.5vw;
+    padding-bottom: 3vw;
+}
+.mp p{
+    width: 100%;
+    font-size: 1.1vw;
+    padding-bottom: 3vw;
+}
+.photo{
+    height: 16.4vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+.photo img{
+    height: 100%;
+    object-fit: cover;
+}
+.p5p2{
+    height: 50vw;
+    padding: 4vw;
+}
+.p5p2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+.p5p3{
+    height: 50vw;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5.5vw;
+}
+.p5p{
+    height: 100%;
+    width: 45%;
+}
+.p5p img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.p5con{
+    height: 100%;
+    width: 40%;
+}
+.p5con img{
+    height: 75%;
+    width: 100%;
+    object-fit: cover;
+}
+.marque{
+    width: 100%;
+    padding: 1vw;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+.marque h1{
+    display: inline-block;
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-right: 16px;
+    -webkit-text-stroke: 2px #000;
+    color: transparent;
+    font-family: 'monument';
+    animation-name: move;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes move {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 20px));
+    }
+    
+}
+.blog{
+    height: 80vh;
+    width: 100%;
+    padding: 4vw;
+    display: flex;
+    gap: 5vw;
+    justify-content: center; 
+}
+.blog h1{
+    width: 20%;
+    font-family: 'monument';
+    font-size: 2.6vw;
+    padding: 0vw 2vw;
+}
+.txtimg{
+    width: 40%;
+}
+.txtimg p{
+    height: 40%;
+    font-size: 1.6vw;
+    padding-bottom: 4vw;
+}
+.txtimg span{
+    font-size: 1.2vw;
+    padding: .3vw .8vw;
+    border-radius: 50%;
+    margin-right: 2px;
+    border: 2px solid #000;
+}
+.txtimg img{
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.footer{
+    height: 15vw;
+    width: 100%;    
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+.footer h1{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    font-family: 'monument';
+    font-size: 45px;
+    padding-top: 3vw;
+    letter-spacing: -4px;
+    position: relative;
+}
+.footer h1::after{
+    content: "©️";
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    position: absolute;
+    top: 16%;
+    right: 17%;
+}
+.footer h1::before{
+    content: "model managment";
+    font-weight: 400;
+    font-size: 8px;
+    position: absolute;
+    bottom: 55%;
+    letter-spacing: 5px;
+    right: 18%;
+    color: #666;
+}
+.footer h2{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    border-right: 2px solid #000;
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 3vw;
+}
+.last{
+    width: 40%;
+    height: 100%;
+}
+.last h3{
+    height: 40%;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    padding-left: 7vw;
+    justify-content: center;
+    flex-direction: column;
+}
+.icon{
+    height: 20%;
+    padding-bottom: 2vw
+}
+.icon i{
+    font-size: 1.3vw;
+    padding-right: 1.5vw;
+    color: #666;
+}
+
+@media (max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav{
+        height: 10vh;
+        padding: 0 5vw;
+    }
+    .nav h1{
+        height: 100%;
+        font-size: 30px;
+        padding-left: 15vw;
+        letter-spacing: -2px;
+        position: relative;
+    }
+    .nav h1::after{
+        display: none;
+    }
+    .nav h1::before{
+        display: none;
+    }
+    .nav h2{
+        display: none;
+    }
+    .nav h3 i{
+        display: initial;
+    }
+    .overlay{
+        height: 50%;
+    }
+    .over1{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3.2vw;
+    }
+    .over1 h1{
+        font-size: 6vw;
+        line-height: 5.5vw;
+    }
+    .over1 h2{
+        font-size: 2vw;
+    }
+    .over2 h4{
+        font-size: 2.5vw;
+    }
+    .over2 i{
+        font-size: 3vw;
+    }
+    .scroll{
+        height: 20vh;
+    }
+    .container{
+        height: 95%;
+        width: 120%;
+    }
+    .scroll img{
+        height: 70%;
+        width: 18.5%;
+    }
+    .alpha{
+        height: 7vh;
+        width: 100%;
+        gap: 0vw;
+        overflow: hidden;
+    }
+
+    .alpha h5{
+        font-size: 2.5vw;
+        font-weight: 500;
+        margin-right: 1vw;
+    }
+    .alpha h6{
+        font-size: 1.8vw;
+    }
+    .pg2{
+        height: 70vw;
+    }
+    .p1 img{
+        width: 90%;
+    }
+    .p1 h2{
+        font-size: 3.5vw;
+    }
+    .para{
+        flex-direction: column;
+    
+    }
+    .para h3{
+        width: 100%;
+        font-size: 2.5vw;
+        margin-bottom: 3vw;
+    }
+    .para p{
+        width: 100%;
+        font-size: 2vw;
+    }
+    .p3{
+        height: 70vw;
+    }
+    .circle-txt{
+        width: 40%;
+    }
+    .circle #c{
+        height: 20vw;
+        width: 20vw;
+    }
+    .txt h3{
+        font-size: 2.1vw;
+    }
+    .p3p1{
+        height: 50vw;
+    }
+    .p3p1 img{
+        height: 100%;
+        width: 100%;
+    }
+    .p4{
+        height: 70vw;
+        width: 100%;
+    }
+    .p4>h1{
+        font-size: 5vw;
+        margin-bottom: 3vh;
+    }
+    .elem{
+        height: 7vh;
+    }
+    .elem img{
+        height: 5vh;
+        width: 8vw;
+    }
+    .elem h4{
+        font-size: 2vw;
+    }
+    .elem .elem2{
+        width: 50%;
+    }
+    .elem2 h1{
+        font-size: 3vw;
+    }
+    .elem2 h5{
+        font-size: 1.5vw;
+    }
+    .p5{
+        height: 160vw;
+        padding: 2vw;
+    }
+    .p5con img{
+        height: 55%;
+        object-position: top;
+    }
+    .marque h1{
+        font-size: 4vw;
+        letter-spacing: 1vw;
+        font-weight: 500;
+        margin-right: 8px;
+        -webkit-text-stroke: 1px #000;
+    }
+    .blog{
+        height: 30vh;
+    }
+    .blog h1{
+        font-size: 3vw;
+    }
+    .txtimg p{
+        font-size: 2vw;
+    }
+    .txtimg span{
+        font-size: 2vw;
+        border: 1px solid #000;
+    }
+    .footer{
+        height: 20vw;
+        width: 100%;    
+        padding-bottom: 3vw;
+        border-top: 2px solid #000;
+        position: absolute;
+        display: flex;
+        justify-content: space-around;
+    }
+    .footer h1{
+        width: 50%;
+        font-size: 22px;
+        letter-spacing: .5vw;
+    }
+    .footer h1::after{
+        display: none;
+    }
+    .footer h1::before{
+        display: none;
+    }
+    .footer h2{
+        display: none;
+    }
+    .last{
+        width: 40%;
+        height: 100%;
+    }
+    .last h3{
+        display: none;
+    }
+    .icon i{
+        font-size: 3.5vw;
+    }
+    .copy{
+        display: none;
+    }
+}
